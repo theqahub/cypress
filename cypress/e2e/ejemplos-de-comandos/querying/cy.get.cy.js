@@ -1,7 +1,7 @@
 // Funciones en Cypress 
 // Comandos útiles y ejemplos para aprender desde 0
 
-// cy.get()
+// cy.get() 
 describe('Tests para usar cy.get() básico', () => {
     beforeEach(() => {
       // Visitar la página de ejemplo de Cypress
