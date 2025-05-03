@@ -28,5 +28,9 @@ jobs:
 
       # Paso 5: Ejecuta los tests de Cypress en modo headless
       - name: Run Cypress tests
+<<<<<<< HEAD
         run: npx cypress run
+=======
+        run: npx cypress run --config-file e2e/cypress.config.js
+>>>>>>> ba715317a3adac3e164d2889a9717b40ec38bfa8
 
