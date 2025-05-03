@@ -73,7 +73,6 @@ Serie de ejemplos sobre **buenas y malas prácticas** al seleccionar elementos e
 ## 🎬 Videos
 
 Cada archivo está vinculado a un vídeo específico del canal [TheQAHub](https://www.youtube.com/@theqahub_es), donde se explica detalladamente cómo usar Cypress desde cero y aplicarlo en proyectos reales.
-
 Suscríbete para seguir el curso completo y recibir notificaciones de nuevos módulos.
 
 ---
