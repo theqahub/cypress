@@ -24,10 +24,10 @@ el framework de testing end-to-end más popular para aplicaciones web.
                 ├── cy.root.cy.js
                 ├── .within.cy.js
                 └── mejoresPracticas.cy.js
-
+```
 ---
 
-\## 📌 Contenido de los Archivos
+## 📌 Contenido de los Archivos
 
 ### 🔹 `primerSpec.cy.js`
 Archivo inicial para introducir la estructura básica de un test en Cypress.  
@@ -95,6 +95,7 @@ Suscríbete para seguir el curso completo y recibir notificaciones de nuevos mó
 
 ```bash
 npm install cypress --save-dev
+```
 
 ---
 
@@ -104,6 +105,7 @@ Desde la raíz del proyecto:
 
 ```bash
 npx cypress open
+```
 
 ---
 
