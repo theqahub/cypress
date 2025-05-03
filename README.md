@@ -1,6 +1,6 @@
-![License](https://img.shields.io/badge/license-MIT-green)
+![License](https://img.shields.io/badge/license-TheQAHub-green)
 ![Cypress](https://img.shields.io/badge/cypress-v14.0.3-blue)
-![Release](https://img.shields.io/badge/release-May-yellowgreen)
+![Release](https://img.shields.io/badge/release-Mayo-2025-yellowgreen)
 
 # 🌐 Cypress – Curso desde cero | TheQAHub
 
