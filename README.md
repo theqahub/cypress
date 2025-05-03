@@ -27,7 +27,7 @@ el framework de testing end-to-end más popular para aplicaciones web.
 
 ---
 
-## 📌 Contenido de los Archivos
+\## 📌 Contenido de los Archivos
 
 ### 🔹 `primerSpec.cy.js`
 Archivo inicial para introducir la estructura básica de un test en Cypress.  
