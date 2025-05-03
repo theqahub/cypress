@@ -22,6 +22,11 @@ jobs:
       - name: Install Cypress (optional)
         run: npm install cypress --save-dev
 
-      # Paso 4: Ejecuta los tests de Cypress en modo headless
+      # Paso 4: Cambiar al directorio donde tenemos los tests alojados
+      - name: Change directory to execute cypress tests
+        run: cd e2e/cypress
+
+      # Paso 5: Ejecuta los tests de Cypress en modo headless
       - name: Run Cypress tests
         run: npx cypress run
+
