@@ -38,7 +38,7 @@ Contiene ejemplos sencillos como:
 
 ---
 
-### 📂 `ejemplos-de-comandos/querying/`
+## 📂 `ejemplos-de-comandos/querying/`
 
 #### ✅ `cy.get.cy.js`
 Ejemplos del uso de `cy.get()` con:
