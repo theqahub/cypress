@@ -1,6 +1,8 @@
 # 🌐 Cypress – Curso desde cero | TheQAHub
 
-Este repositorio contiene todos los archivos y ejemplos usados en los vídeos del canal **[TheQAHub](https://www.youtube.com/@theqahub_es)** sobre **Cypress**, el framework de testing end-to-end más popular para aplicaciones web.
+Este repositorio contiene todos los archivos y ejemplos usados en los vídeos 
+del canal **[TheQAHub](https://www.youtube.com/@theqahub_es)** sobre **Cypress**, 
+el framework de testing end-to-end más popular para aplicaciones web.
 
 ---
 
@@ -53,7 +55,8 @@ Explora `cy.contains()` para:
 #### ✅ `cy.root.cy.js`
 Demuestra cómo usar `cy.root()` para:
 - Obtener el elemento raíz del DOM global (`html`)
-- Usarlo dentro de `.within()` para acceder al elemento raíz del contexto limitado (ej: un `ul` específico)
+- Usarlo dentro de `.within()` para acceder al elemento raíz del
+contexto limitado (ej: un `ul` específico)
 
 #### ✅ `.within.cy.js`
 Explica el comando `.within()` para:
@@ -62,17 +65,21 @@ Explica el comando `.within()` para:
 - Mejorar la precisión de las pruebas
 
 #### ✅ `mejoresPracticas.cy.js`
-Serie de ejemplos sobre **buenas y malas prácticas** al seleccionar elementos en Cypress:
+Serie de ejemplos sobre **buenas y malas prácticas** al seleccionar elementos
+en Cypress:
 - ❌ Uso genérico de etiquetas (`button`)
 - ⚠️ Selectores acoplados a estilos CSS
 - ✅ Selectores por atributos semánticos (`name`, `id`, `role`)
-- 💡 Uso recomendado de `data-cy` o `data-test-id` para pruebas robustas y aisladas de cambios de UI
+- 💡 Uso recomendado de `data-cy` o `data-test-id` para pruebas robustas
+y aisladas de cambios de UI
 
 ---
 
 ## 🎬 Videos
 
-Cada archivo está vinculado a un vídeo específico del canal [TheQAHub](https://www.youtube.com/@theqahub_es), donde se explica detalladamente cómo usar Cypress desde cero y aplicarlo en proyectos reales.
+Cada archivo está vinculado a un vídeo específico del canal
+[TheQAHub](https://www.youtube.com/@theqahub_es), donde se explica
+detalladamente cómo usar Cypress desde cero y aplicarlo en proyectos reales.
 Suscríbete para seguir el curso completo y recibir notificaciones de nuevos módulos.
 
 ---
@@ -108,14 +115,16 @@ npx cypress open
 ## 📚 Licencia 
 
 MIT – Libre para usar, compartir y mejorar.
-Si compartes o reutilizas este contenido, por favor menciona o enlaza a TheQAHub como fuente.
+Si compartes o reutilizas este contenido, por favor menciona o
+enlaza a TheQAHub como fuente.
 
 ---
 
 ## 💬 Autor 
 
 Creado por Diego – [TheQAHub](https://www.theqahub.es/)
-Encuéntrame en Instagram, YouTube y más plataformas compartiendo conocimientos sobre Testing y QA.
+Encuéntrame en Instagram, YouTube y más plataformas compartiendo
+conocimientos sobre Testing y QA.
 
 
 
