@@ -2,7 +2,7 @@
 // Comandos útiles y ejemplos para aprender desde 0
 
 // cy.contains()
-describe('Tests para usar cy.get() básico', () => {
+describe('Tests para usar cy.contains() básico', () => {
     beforeEach(() => {
       // Visitar la página de ejemplo de Cypress
       cy.visit('https://example.cypress.io'); 
