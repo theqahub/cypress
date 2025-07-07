@@ -1,96 +1,131 @@
-![License](https://img.shields.io/badge/licencia-TheQAHub-green)
+
+![Licencia](https://img.shields.io/badge/licencia-TheQAHub-green)
 ![Cypress](https://img.shields.io/badge/cypress-v14.0.3-blue)
-![Release](https://img.shields.io/badge/version-Mayo_2025-yellowgreen)
+![Versión](https://img.shields.io/badge/version-Mayo_2025-yellowgreen)
 
 # 🌐 Cypress – Curso desde cero | TheQAHub
 
-Este repositorio contiene todos los archivos y ejemplos usados en los vídeos 
-del canal **[TheQAHub](https://www.youtube.com/@theqahub_es)** sobre **Cypress**, 
-el framework de testing end-to-end más popular para aplicaciones web.
+Este repositorio contiene todos los archivos y ejemplos utilizados en los vídeos del canal [TheQAHub](https://www.youtube.com/@theqahub_es) sobre **Cypress**, el framework de testing end-to-end más popular para aplicaciones web.
 
 ---
 
 ## 📁 Estructura del Proyecto
 
 ```bash
-/CYPRESS/
-└── cypress/
-    └── e2e/
-        ├── primerSpec.cy.js
-        └── ejemplos-de-comandos/
-            └── querying/
-                ├── cy.get.cy.js
-                ├── cy.contains.cy.js
-                ├── cy.root.cy.js
-                ├── .within.cy.js
-                └── mejoresPracticas.cy.js
+/cypress/
+└── e2e/
+    ├── primerSpec.cy.js
+    └── ejemplos-de-comandos/
+        ├── querying/
+        │   ├── cy.get().cy.js
+        │   ├── cy.contains().cy.js
+        │   ├── cy.root().cy.js
+        │   ├── .within().cy.js
+        │   └── mejoresPracticas.cy.js
+        ├── traversal/
+        │   ├── cy.children().cy.js
+        │   ├── cy.closest().cy.js
+        │   ├── cy.eq().cy.js
+        │   ├── cy.filter().cy.js
+        │   ├── cy.find().cy.js
+        │   ├── cy.first().cy.js
+        │   ├── cy.last().cy.js
+        │   ├── cy.next().cy.js
+        │   ├── cy.nextAll().cy.js
+        │   ├── cy.nextUntil().cy.js
+        │   ├── cy.not().cy.js
+        │   ├── cy.parent().cy.js
+        │   ├── cy.parents().cy.js
+        │   ├── cy.parentsUntil().cy.js
+        │   ├── cy.prev().cy.js
+        │   ├── cy.prevAll().cy.js
+        │   ├── cy.prevUntil().cy.js
+        │   └── cy.siblings().cy.js
+        └── actions/
+            ├── cy.blur().cy.js
+            ├── cy.check().cy.js
+            ├── cy.clear().cy.js
+            ├── cy.click().cy.js
+            ├── cy.dblclick().cy.js
+            ├── cy.focus().cy.js
+            ├── cy.rightclick().cy.js
+            ├── cy.scrollIntoView().cy.js
+            ├── cy.scrollTo().cy.js
+            ├── cy.select().cy.js
+            ├── cy.submit().cy.js
+            ├── cy.trigger().cy.js
+            ├── cy.type().cy.js
+            └── cy.uncheck().cy.js
 ```
----
-
-## 📌 Contenido de los Archivos
-
-### 🔹 `primerSpec.cy.js`
-Archivo inicial para introducir la estructura básica de un test en Cypress.  
-Contiene ejemplos sencillos como:
-- Visitas a páginas
-- Comprobaciones con `cy.contains()`
-- Uso básico de `cy.get()`
 
 ---
 
-## 📂 `ejemplos-de-comandos/querying/`
+## 📌 Contenido de los Ejemplos
 
-#### ✅ `cy.get.cy.js`
-Ejemplos del uso de `cy.get()` con:
-- Selectores por ID (`#id`)
-- Clases (`.class`)
-- Selectores combinados y jerárquicos
-- Atributos personalizados (`[data-test-id]`)
-- Acceso a atributos y estilos con `.invoke()`
-- Encadenamiento de assertions (`.should()` + `.and()`)
+### 📂 `querying/` – **Lección: Querying**
 
-#### ✅ `cy.contains.cy.js`
-Explora `cy.contains()` para:
-- Encontrar elementos por texto exacto
-- Uso de expresiones regulares (RegExp)
-- Restringir la búsqueda a un tipo de elemento (ej: `ul`, `button`)
-- Verificar atributos o clases de los elementos encontrados
+Comandos para seleccionar y encontrar elementos en el DOM:
 
-#### ✅ `cy.root.cy.js`
-Demuestra cómo usar `cy.root()` para:
-- Obtener el elemento raíz del DOM global (`html`)
-- Usarlo dentro de `.within()` para acceder al elemento raíz del
-contexto limitado (ej: un `ul` específico)
-
-#### ✅ `.within.cy.js`
-Explica el comando `.within()` para:
-- Limitar el alcance de los comandos `cy.get()` a un contenedor específico
-- Evitar ambigüedades cuando hay múltiples elementos similares
-- Mejorar la precisión de las pruebas
-
-#### ✅ `mejoresPracticas.cy.js`
-Serie de ejemplos sobre **buenas y malas prácticas** al seleccionar elementos
-en Cypress:
-- ❌ Uso genérico de etiquetas (`button`)
-- ⚠️ Selectores acoplados a estilos CSS
-- ✅ Selectores por atributos semánticos (`name`, `id`, `role`)
-- 💡 Uso recomendado de `data-cy` o `data-test-id` para pruebas robustas
-y aisladas de cambios de UI
+- `cy.get()` – Selección por selectores CSS (`#id`, `.clase`, `[attr=value]`).
+- `cy.contains()` – Busca elementos por texto visible.
+- `cy.root()` – Accede al elemento raíz del DOM o contexto `.within()`.
+- `.within()` – Limita los comandos dentro de un contenedor específico.
+- `mejoresPracticas.cy.js` – Recomendaciones para selectores estables (`data-cy`, `id`, `role`).
 
 ---
 
-## 🎬 Videos
+### 📂 `traversal/` – **Lección: Traversal**
 
-Cada archivo está vinculado a un vídeo específico del canal
-[TheQAHub](https://www.youtube.com/@theqahub_es), donde se explica
-detalladamente cómo usar Cypress desde cero y aplicarlo en proyectos reales.
-Suscríbete para seguir el curso completo y recibir notificaciones de nuevos módulos.
+Comandos para navegar el DOM desde un elemento base:
+
+- `cy.children()` – Hijos directos.
+- `cy.closest()` – Ancestro más cercano.
+- `cy.eq()` – Elemento por índice.
+- `cy.filter()` – Filtrado por selector.
+- `cy.find()` – Buscar descendientes.
+- `cy.first()` – Primer elemento.
+- `cy.last()` – Último elemento.
+- `cy.next()` / `nextAll()` / `nextUntil()` – Hermanos siguientes.
+- `cy.not()` – Excluir elementos que coincidan con un selector.
+- `cy.parent()` – Padre inmediato.
+- `cy.parents()` – Todos los ancestros.
+- `cy.parentsUntil()` – Ancestros hasta un selector.
+- `cy.prev()` / `prevAll()` / `prevUntil()` – Hermanos anteriores.
+- `cy.siblings()` – Todos los hermanos.
+
+---
+
+### 📂 `actions/` – **Lección: Actions**
+
+Comandos que simulan acciones del usuario:
+
+- `cy.blur()` – Quita el enfoque.
+- `cy.check()` / `uncheck()` – Interactúa con checkboxes y radios.
+- `cy.clear()` – Limpia un campo de texto.
+- `cy.click()` – Simula un clic.
+- `cy.dblclick()` – Doble clic.
+- `cy.focus()` – Enfoca manualmente.
+- `cy.rightclick()` – Clic derecho.
+- `cy.scrollIntoView()` – Hace scroll hasta un elemento.
+- `cy.scrollTo()` – Hace scroll a una coordenada o posición.
+- `cy.select()` – Selecciona una opción en un `<select>`.
+- `cy.submit()` – Envía formularios.
+- `cy.trigger()` – Dispara eventos personalizados.
+- `cy.type()` – Escribe texto.
+- `cy.uncheck()` – Desmarca un checkbox o radio.
+
+---
+
+## 🎬 Videos del Curso
+
+Cada carpeta está asociada a una lección del canal [TheQAHub](https://www.youtube.com/@theqahub_es), donde explicamos todos los comandos de forma clara y práctica.  
+Suscríbete y activa la campanita 🔔 para no perderte nuevas lecciones.
 
 ---
 
 ## 🧪 Requisitos
 
-- Tener **Node.js** instalado
+- Tener **Node.js** instalado.
 - Cypress como dependencia de desarrollo:
 
 ```bash
@@ -109,28 +144,22 @@ npx cypress open
 
 ---
 
-## 🧠 Objetivo del Curso
+## 🎯 Objetivo del Curso
 
-- Aprender Cypress desde cero, paso a paso
-- Entender los comandos de querying en profundidad
-- Crear pruebas robustas, legibles y mantenibles
-- Aplicar buenas prácticas de automatización en el frontend
-
----
-
-## 📚 Licencia 
-
-MIT – Libre para usar, compartir y mejorar.
-Si compartes o reutilizas este contenido, por favor menciona o
-enlaza a TheQAHub como fuente.
+- Aprender Cypress desde cero.
+- Dominar comandos esenciales de automatización.
+- Escribir pruebas claras y mantenibles.
+- Aplicar buenas prácticas en testing frontend.
 
 ---
 
-## 💬 Autor 
+## 📚 Licencia
 
-Creado por Diego – [TheQAHub](https://www.theqahub.es/)
-Encuéntrame en Instagram, YouTube y más plataformas compartiendo
-conocimientos sobre Testing y QA.
+MIT – Libre para usar, compartir y mejorar. Si reutilizas este contenido, menciona o enlaza a TheQAHub como fuente.
 
+---
 
+## 💬 Autor
 
+Creado por Diego – [TheQAHub](https://www.theqahub.es/)  
+Encuéntrame en Instagram, YouTube y más, compartiendo contenido sobre Testing y QA.
