@@ -150,7 +150,7 @@ Comandos para obtener información de la URL actual:
 - `cy.location()` – Accede a propiedades como `pathname`, `host`, `protocol`, etc.
 - `cy.url()` – Retorna la URL completa actual.
 
-### 📂 `navigation/ – **Lección: Window-Viewport-Location-Navigation**
+### 📂 `navigation/` – **Lección: Window-Viewport-Location-Navigation**
 
 Comandos para controlar la navegación en la aplicación:
 
