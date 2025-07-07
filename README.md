@@ -41,21 +41,35 @@ Este repositorio contiene todos los archivos y ejemplos utilizados en los vídeo
         │   ├── cy.prevAll().cy.js
         │   ├── cy.prevUntil().cy.js
         │   └── cy.siblings().cy.js
-        └── actions/
-            ├── cy.blur().cy.js
-            ├── cy.check().cy.js
-            ├── cy.clear().cy.js
-            ├── cy.click().cy.js
-            ├── cy.dblclick().cy.js
-            ├── cy.focus().cy.js
-            ├── cy.rightclick().cy.js
-            ├── cy.scrollIntoView().cy.js
-            ├── cy.scrollTo().cy.js
-            ├── cy.select().cy.js
-            ├── cy.submit().cy.js
-            ├── cy.trigger().cy.js
-            ├── cy.type().cy.js
-            └── cy.uncheck().cy.js
+        ├── actions/
+        │   ├── cy.blur().cy.js
+        │   ├── cy.check().cy.js
+        │   ├── cy.clear().cy.js
+        │   ├── cy.click().cy.js
+        │   ├── cy.dblclick().cy.js
+        │   ├── cy.focus().cy.js
+        │   ├── cy.rightclick().cy.js
+        │   ├── cy.scrollIntoView().cy.js
+        │   ├── cy.scrollTo().cy.js
+        │   ├── cy.select().cy.js
+        │   ├── cy.submit().cy.js
+        │   ├── cy.trigger().cy.js
+        │   ├── cy.type().cy.js
+        │   └── cy.uncheck().cy.js
+        ├── window/
+        │   ├── cy.document().cy.js
+        │   ├── cy.title().cy.js
+        │   └── cy.window().cy.js
+        ├── viewport/
+        │   └── cy.viewport().cy.js
+        ├── location/
+        │   ├── cy.hash().cy.js
+        │   ├── cy.location().cy.js
+        │   └── cy.url().cy.js
+        └── navigation/
+            ├── cy.go().cy.js
+            ├── cy.reload().cy.js
+            └── cy.visit().cy.js
 ```
 
 ---
@@ -113,6 +127,36 @@ Comandos que simulan acciones del usuario:
 - `cy.trigger()` – Dispara eventos personalizados.
 - `cy.type()` – Escribe texto.
 - `cy.uncheck()` – Desmarca un checkbox o radio.
+
+### 📂 `window/` – **Lección: Window-Viewport-Location-Navigation**
+
+Comandos para acceder al contexto global del navegador:
+
+- `cy.window()` – Accede al objeto global `window`.
+- `cy.document()` – Obtiene el `document` actual.
+- `cy.title()` – Obtiene el título de la página.
+
+### 📂 `viewport/` – **Lección: Window-Viewport-Location-Navigation**
+
+Comando para simular distintos tamaños de pantalla:
+
+- `cy.viewport()` – Ajusta el tamaño de la ventana del navegador para simular diferentes dispositivos.
+
+### 📂 `location/` – **Lección: Window-Viewport-Location-Navigation**
+
+Comandos para obtener información de la URL actual:
+
+- `cy.hash()` – Obtiene el fragmento hash de la URL (`#...`).
+- `cy.location()` – Accede a propiedades como `pathname`, `host`, `protocol`, etc.
+- `cy.url()` – Retorna la URL completa actual.
+
+### 📂 `navigation/ – **Lección: Window-Viewport-Location-Navigation**
+
+Comandos para controlar la navegación en la aplicación:
+
+- `cy.visit()` – Carga una nueva URL.
+- `cy.go()` – Navega hacia adelante o atrás en el historial del navegador.
+- `cy.reload()` – Recarga la página actual.
 
 ---
 
