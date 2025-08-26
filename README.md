@@ -66,10 +66,16 @@ Este repositorio contiene todos los archivos y ejemplos utilizados en los vídeo
         │   ├── cy.hash().cy.js
         │   ├── cy.location().cy.js
         │   └── cy.url().cy.js
-        └── navigation/
-            ├── cy.go().cy.js
-            ├── cy.reload().cy.js
-            └── cy.visit().cy.js
+        ├── navigation/
+        │   ├── cy.go().cy.js
+        │   ├── cy.reload().cy.js
+        │   └── cy.visit().cy.js
+        └── misc/
+            ├── cy.end().cy.js
+            ├── cy.exec().cy.js
+            ├── cy.focused().cy.js
+            ├── cy.screenshot().cy.js
+            └── cy.wrap().cy.js
 ```
 
 ---
@@ -157,6 +163,16 @@ Comandos para controlar la navegación en la aplicación:
 - `cy.visit()` – Carga una nueva URL.
 - `cy.go()` – Navega hacia adelante o atrás en el historial del navegador.
 - `cy.reload()` – Recarga la página actual.
+
+### 📂 `misc/` – Lección: Misc
+
+Comandos misceláneos para utilidades y control avanzado:
+
+- `cy.end()` – Termina la cadena de comandos en curso.
+- `cy.exec()` – Ejecuta comandos del sistema directamente desde Cypress.
+- `cy.focused()` – Devuelve el elemento actualmente enfocado.
+- `cy.screenshot()` – Toma capturas de pantalla durante la prueba.
+- `cy.wrap()` – Envuelve un objeto o valor para integrarlo en la cadena de Cypress.
 
 ---
 
