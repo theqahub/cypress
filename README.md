@@ -70,12 +70,18 @@ Este repositorio contiene todos los archivos y ejemplos utilizados en los vídeo
         │   ├── cy.go().cy.js
         │   ├── cy.reload().cy.js
         │   └── cy.visit().cy.js
-        └── misc/
-            ├── cy.end().cy.js
-            ├── cy.exec().cy.js
-            ├── cy.focused().cy.js
-            ├── cy.screenshot().cy.js
-            └── cy.wrap().cy.js
+        ├── misc/
+        │   ├── cy.end().cy.js
+        │   ├── cy.exec().cy.js
+        │   ├── cy.focused().cy.js
+        │   ├── cy.screenshot().cy.js
+        │   └── cy.wrap().cy.js
+        └── connectors/
+            ├── cy.each().cy.js
+            ├── cy.its().cy.js
+            ├── cy.invoke().cy.js
+            ├── cy.spread().cy.js
+            └── cy.then().cy.js
 ```
 
 ---
@@ -173,6 +179,16 @@ Comandos misceláneos para utilidades y control avanzado:
 - `cy.focused()` – Devuelve el elemento actualmente enfocado.
 - `cy.screenshot()` – Toma capturas de pantalla durante la prueba.
 - `cy.wrap()` – Envuelve un objeto o valor para integrarlo en la cadena de Cypress.
+
+### 📂 `connectors/` – **Lección: Connectors**
+
+Conectores para trabajar con el *subject* actual:
+
+- `.each()` – Itera sobre cada elemento del subject (ej. cada `<li>` en una lista).
+- `.its(prop)` – Accede a una propiedad del subject (ej. `.its('length')`).
+- `.invoke(fn, ...args)` – Invoca un método del subject (ej. `.invoke('show')`).
+- `.spread(cb)` – “Desparrama” un array en argumentos individuales del callback.
+- `.then(cb)` – Usa el valor yield del subject en un callback; mantiene el valor si no retornas nada, o pasa el último yield de Cypress si hay comandos dentro.
 
 ---
 
