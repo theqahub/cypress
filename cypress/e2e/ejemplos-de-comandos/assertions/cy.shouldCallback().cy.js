@@ -1,6 +1,7 @@
-// Funciones en Cypress 
-// Assertions: cy.should() con callback
+// Funciones en Cypress
+// Comandos útiles y ejemplos para aprender desde 0
 
+// cy.should() con callback
 describe('Tests para usar cy.should() con callback', () => {
   beforeEach(() => {
     cy.visit('https://example.cypress.io/commands/assertions');

@@ -1,6 +1,7 @@
 // Funciones en Cypress 
-// Assertions: cy.and()
+// Comandos útiles y ejemplos para aprender desde 0
 
+// cy.and()
 describe('Tests para usar cy.and()', () => {
   beforeEach(() => {
     cy.visit('https://example.cypress.io/commands/assertions');

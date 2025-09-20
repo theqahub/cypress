@@ -1,6 +1,7 @@
 // Funciones en Cypress 
-// Assertions: cy.should()
+// Comandos útiles y ejemplos para aprender desde 0
 
+// cy.should()
 describe('Tests para usar cy.should()', () => {
   beforeEach(() => {
     cy.visit('https://example.cypress.io/commands/assertions');

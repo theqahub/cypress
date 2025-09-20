@@ -1,6 +1,7 @@
 // Funciones en Cypress 
-// Assertions: assert()
+// Comandos útiles y ejemplos para aprender desde 0
 
+// assert()
 describe('Tests para usar assert()', () => {
   beforeEach(() => {
     cy.visit('https://example.cypress.io/commands/assertions');

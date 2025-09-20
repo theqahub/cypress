@@ -1,6 +1,7 @@
 // Funciones en Cypress 
-// Assertions: expect()
+// Comandos útiles y ejemplos para aprender desde 0
 
+// expect()
 describe('Tests para usar expect()', () => {
   beforeEach(() => {
     cy.visit('https://example.cypress.io/commands/assertions');
