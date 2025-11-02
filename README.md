@@ -76,12 +76,16 @@ Este repositorio contiene todos los archivos y ejemplos utilizados en los vídeo
         │   ├── cy.focused().cy.js
         │   ├── cy.screenshot().cy.js
         │   └── cy.wrap().cy.js
-        └── connectors/
-            ├── cy.each().cy.js
-            ├── cy.its().cy.js
-            ├── cy.invoke().cy.js
-            ├── cy.spread().cy.js
-            └── cy.then().cy.js
+        ├── connectors/
+        │   ├── cy.each().cy.js
+        │   ├── cy.its().cy.js
+        │   ├── cy.invoke().cy.js
+        │   ├── cy.spread().cy.js
+        │   └── cy.then().cy.js
+        ├── waiting/
+        │   └── cy.wait().cy.js
+        └── aliasing/
+            └── cy.as().cy.js
 ```
 
 ---
@@ -189,6 +193,26 @@ Conectores para trabajar con el *subject* actual:
 - `.invoke(fn, ...args)` – Invoca un método del subject (ej. `.invoke('show')`).
 - `.spread(cb)` – “Desparrama” un array en argumentos individuales del callback.
 - `.then(cb)` – Usa el valor yield del subject en un callback; mantiene el valor si no retornas nada, o pasa el último yield de Cypress si hay comandos dentro.
+
+### 📂 `aliasing/` – **Lección: Aliasing**
+
+Permite crear **alias** para reutilizar elementos o rutas en diferentes partes del test.  
+Esto hace que el código sea más legible y evita repetir comandos largos.
+
+- `.as(name)` – Crea un alias para un elemento del DOM o una ruta interceptada.  
+- `@alias` – Hace referencia al alias creado previamente (por ejemplo, `cy.get('@btn')`).  
+- Se usa comúnmente con `cy.intercept()` y `cy.wait()` para esperar respuestas de red.  
+- También puede aplicarse a comandos encadenados para simplificar el código.
+
+### 📂 `waiting/` – **Lección: Waiting**
+
+Comandos para **esperar** que algo ocurra antes de continuar la ejecución del test.  
+Son útiles para sincronizar las pruebas con las respuestas del servidor o procesos asíncronos.
+
+- `cy.wait(ms)` – Espera un tiempo específico en milisegundos (`cy.wait(2000)` pausa 2 s).  
+- `cy.wait('@alias')` – Espera a que se complete una petición interceptada con un alias.  
+- `.its('response.statusCode')` – Accede a la respuesta y permite hacer aserciones sobre ella.  
+- Evita abusar de los tiempos fijos: prioriza esperas condicionales o basadas en alias.  
 
 ---
 
